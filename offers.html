@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Special Offers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Bean Boutique</a>
+    
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item dropdown">
+        <a href="coffee.html" class="nav-link">Coffee Selection</a>
+        <ul class="dropdown-menu">
+          <li class="nav-item"><a href="Espresso.html" class="nav-link">Espresso</a></li>
+          <li class="nav-item"><a href="Cappuccino.html" class="nav-link">Cappuccino</a></li>
+          <li class="nav-item"><a href="Americano.html" class="nav-link">Americano</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="brewing.html" class="nav-link">Brewing Equipment</a></li>
+      <li class="nav-item"><a href="events.html" class="nav-link">Events & Workshops</a></li>
+      <li class="nav-item"><a href="cart.html" class="nav-link">Shopping Cart</a></li>
+      <li class="nav-item"><a href="offers.html" class="nav-link">Special Offers</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <audio id="myAudio" loop preload="auto">
+        <source src="song/BackgroundMusic.mp3" type="audio/mpeg">
+      </audio>
+
+      <button class="music" onclick="toggleAudio()">🎵 Play Music</button>
+    <h1 class="heading">Special Offers & Subscriptions</h1>
+    
+    <div class="offers">
+      <div class="offer-item">
+        <span class="offer-discount">30% OFF</span>
+        <img src="images/MochaCappuccino.png" alt="Coffee Subscription">
+        <div class="offer-content">
+          <h2>Premium Coffee Subscription</h2>
+          <p>Get freshly roasted, premium coffee delivered to your door every month.
+            Choose from our curated selection of single origins and blends.</p>
+          <div class="offer-price">$24.99/month</div>
+          <p><small>Regular price: $35.99</small></p>
+          <button class="add-to-cart design" data-name="Premium Coffee Subscription"
+           data-price="24.99">Subscribe Now</button>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="offer-discount">25% OFF</span>
+        <img src="images/expressoMachineBundle.jpg" alt="Espresso Machine Bundle">
+        <div class="offer-content">
+          <h2>Espresso Machine Bundle</h2>
+          <p>Professional-grade espresso machine with grinder, tamper, and 1kg of 
+            premium beans. Everything you need to start your coffee journey.</p>
+          <div class="offer-price">$299.99</div>
+          <p><small>Regular price: $399.99</small></p>
+          <button class="add-to-cart design" data-name="Espresso Machine Bundle" 
+          data-price="299.99">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="offer-discount">20% OFF</span>
+        <img src="images/BaristaStarterKit.jpg" alt="Barista Starter Kit">
+        <div class="offer-content">
+          <h2>Barista Starter Kit</h2>
+          <p>Complete kit including milk frother, measuring spoons, cleaning supplies,
+             and a selection of flavored syrups.</p>
+          <div class="offer-price">$79.99</div>
+          <p><small>Regular price: $99.99</small></p>
+          <button class="add-to-cart design" data-name="Barista Starter Kit" 
+          data-price="79.99">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="offer-discount">15% OFF</span>
+        <img src="images/FrenchPressCoffeeSet.jpg" alt="French Press Set">
+        <div class="offer-content">
+          <h2>French Press Coffee Set</h2>
+          <p>Premium French press with thermal carafe, coarse grind coffee,
+             and brewing guide. Perfect for morning routines.</p>
+          <div class="offer-price">$42.49</div>
+          <p><small>Regular price: $49.99</small></p>
+          <button class="add-to-cart design" data-name="French Press Coffee Set" 
+          data-price="42.49">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="offer-discount">40% OFF</span>
+        <img src="images/eventbean.png" alt="Coffee Bean Selection">
+        <div class="offer-content">
+          <h2>World Coffee Bean Collection</h2>
+          <p>Curated selection of 6 different coffee beans from around the world. 
+            Each 250g bag with tasting notes and brewing recommendations.</p>
+          <div class="offer-price">$89.99</div>
+          <p><small>Regular price: $149.99</small></p>
+          <button class="add-to-cart design" data-name="World Coffee Bean Collection" 
+          data-price="89.99">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="offer-item">
+        <span class="offer-discount">50% OFF</span>
+        <img src="images/PourOverBrewingKit.jpg" alt="Pour Over Kit">
+        <div class="offer-content">
+          <h2>Pour Over Brewing Kit</h2>
+          <p>Complete pour-over setup with dripper, filters, gooseneck kettle,
+             and scale. Master the art of manual brewing.</p>
+          <div class="offer-price">$124.99</div>
+          <p><small>Regular price: $249.99</small></p>
+          <button class="add-to-cart design" data-name="Pour Over Brewing Kit"
+           data-price="124.99">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-2">
+      <h2 class="heading">Limited Time Offers</h2>
+      <p>Don't miss out on these amazing deals! Offers valid until the end of 
+        this month.</p>
+      <a href="cart.html" class="design">View Cart</a>
+    </div>
+  </main>
+
+ <footer>
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>About Bean Boutique</h3>
+        <p>We're passionate about bringing you the finest coffee experience through our carefully curated beans, expert brewing techniques, and educational workshops.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">📘</a>
+          <a href="#" class="social-link" title="Instagram">📷</a>
+          <a href="#" class="social-link" title="Twitter">🐦</a>
+          <a href="#" class="social-link" title="YouTube">📺</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>123 Coffee Street, Bean District<br>Yangon, Myanmar 11181</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>+95 1 234 5678</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>info@Bean Boutique.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <span>Mon-Sun: 7:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffee.html">Coffee Menu</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="brewing.html">Brewing Equipment</a></li>
+          <li><a href="offers.html">Special Offers</a></li>
+          <li><a href="cart.html">Your Cart</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#shipping">Shipping Info</a></li>
+          <li><a href="#returns">Returns & Exchanges</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bean Boutique. All rights reserved. | Crafted with ❤️ and ☕ in Myanmar</p>
+  </div>
+</footer>
+
+  <script src="scripts.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
